@@ -27,7 +27,7 @@ namespace Business.Concrete
             _orderService = orderService;
         }
 
-        [ValidationAspect(typeof(ProductValidator))]
+     //   [ValidationAspect(typeof(ProductValidator))]
         public IResult Add(Product product)
         {
             var result=BusinessRules.Run(CheckIfProductNameExist(product));
